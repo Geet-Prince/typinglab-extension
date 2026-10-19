@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "TypingLab",
+  "version": "1.1.0",
+  "description": "Lightweight, local background typing simulation engine with lock-screen keep-awake and error logging.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "offscreen",
+    "activeTab",
+    "scripting",
+    "power"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "TypingLab",
+    "default_popup": "popup.html"
+  }
+}
